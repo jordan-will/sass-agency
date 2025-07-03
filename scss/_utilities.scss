@@ -1,0 +1,84 @@
+@use './variables' as v;
+
+//MIXINS
+@mixin reset() {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+@mixin main-hover()
+{
+  transition: .3s;
+  &:hover{
+    color: v.$primary-color
+  }
+}
+
+@mixin bg-image($url){
+  background-image: url($url);
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin title-text-shadow(){
+ text-shadow: 2px 3px v.$black ; 
+}
+
+@mixin mobile(){
+  @media (max-width: 425px){
+    @content;
+  }
+}
+
+@mixin card-mobile(){
+  width: 100%;
+      height: 200px;
+      margin: 0;
+      margin-bottom: 2rem;
+}
+
+//BUTTONS
+
+.btn{
+  padding: .6rem 1rem;
+  border: 1px solid v.$light-color;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: .3s;
+  color: v.$light-color;
+
+
+  &:hover{
+    border-color: v.$primary-color;
+    color: v.$primary-color;
+  }
+
+
+  &-primary{
+    background-color: v.$primary-color;
+    border-color: v.$primary-color;
+
+    &:hover{
+      background-color: transparent;
+    }
+  }
+
+  &-rounded{
+   margin-top: 1rem;
+   border-radius: 2rem;
+    padding: 1rem 1.5rem; 
+  }
+
+}
