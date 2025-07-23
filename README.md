@@ -7,7 +7,7 @@ An institutional website representing an information technology (IT) company, de
 ## 🌐 Demo
 
 Access the published website via GitHub Pages:
-🔗 [https://jordanwmp.github.io/sass-agency-website/](https://jordanwmp.github.io/sass-agency-website/)
+🔗 [https://jordanwmp.github.io/sass-agency-website/](https://jordan-will.github.io/sass-agency/)
 
 ## 🛠️ Technologies Used
 
