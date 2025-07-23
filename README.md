@@ -25,7 +25,7 @@ Access the published website via GitHub Pages:
 ## 📦 How to use locally
 1. Clone the repository:
 ```bash
-git clone https://github.com/jordanwmp/sass-agency-website.git
+git clone https://github.com/jordan-will/sass-agency.git
 ```
 
 2. Open the index.html file
